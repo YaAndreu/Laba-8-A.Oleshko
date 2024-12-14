@@ -63,7 +63,21 @@
         th {
             background-color: #f2f2f2;
         }
+        .hidden {
+            display: none;
+        }
     </style>
+    <script>
+        function showPage(pageId) {
+            // Приховуємо всі сторінки
+            document.getElementById('home').classList.add('hidden');
+            document.getElementById('task').classList.add('hidden');
+            document.getElementById('team').classList.add('hidden');
+
+            // Показуємо потрібну сторінку
+            document.getElementById(pageId).classList.remove('hidden');
+        }
+    </script>
 </head>
 <body>
 
@@ -72,18 +86,20 @@
 </header>
 
 <nav>
-    <a href="#home">Головна</a>
-    <a href="#task">Завдання</a>
-    <a href="#team">Команда</a>
+    <a href="#" onclick="showPage('home')">Головна</a>
+    <a href="#" onclick="showPage('task')">Завдання</a>
+    <a href="#" onclick="showPage('team')">Команда</a>
 </nav>
 
 <div class="container">
+    <!-- Головна сторінка -->
     <div id="home" class="content">
         <h2>Головна сторінка</h2>
-        <p>Привіт! Я Андрій автор цього сайту, і ця сторінка містить інформацію про виконаний проект. Перейдіть на інші сторінки для перегляду завдань і інформації про команду.</p>
+        <p>Привіт! Я автор цього сайту, і ця сторінка містить інформацію про виконаний проект. Перейдіть на інші сторінки для перегляду завдань і інформації про команду.</p>
     </div>
 
-    <div id="task" class="content">
+    <!-- Сторінка з завданням -->
+    <div id="task" class="content hidden">
         <h2>Завдання: Таблиця множення</h2>
         <table>
             <tr>
@@ -95,16 +111,16 @@
             <tr>
                 <td>1050</td><td>1100</td><td>1150</td><td>1200</td><td>1250</td><td>1300</td><td>1350</td><td>1400</td><td>1450</td><td>1500</td>
             </tr>
-            <!-- Додаткові ряди можна додати за необхідністю -->
         </table>
     </div>
 
-    <div id="team" class="content">
+    <!-- Сторінка команди -->
+    <div id="team" class="content hidden">
         <h2>Учасники моєї команди</h2>
         <ul>
-            <li>Учасник 1</li>
-            <li>Учасник 2</li>
-            <li>Учасник 3</li>
+            <li>Андрій</li>
+            <li>Олешко</li>
+            <li>Володимирович</li>
         </ul>
     </div>
 </div>
