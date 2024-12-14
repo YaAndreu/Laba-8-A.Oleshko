@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проект команди</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #111;
+        }
+        .container {
+            margin: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .content {
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Проект команди</h1>
+</header>
+
+<nav>
+    <a href="#home">Головна</a>
+    <a href="#task">Завдання</a>
+    <a href="#team">Команда</a>
+</nav>
+
+<div class="container">
+    <div id="home" class="content">
+        <h2>Головна сторінка</h2>
+        <p>Привіт! Я Андрій автор цього сайту, і ця сторінка містить інформацію про виконаний проект. Перейдіть на інші сторінки для перегляду завдань і інформації про команду.</p>
+    </div>
+
+    <div id="task" class="content">
+        <h2>Завдання: Таблиця множення</h2>
+        <table>
+            <tr>
+                <th>21</th><th>22</th><th>23</th><th>24</th><th>25</th><th>26</th><th>27</th><th>28</th><th>29</th><th>30</th>
+            </tr>
+            <tr>
+                <td>525</td><td>550</td><td>575</td><td>600</td><td>625</td><td>650</td><td>675</td><td>700</td><td>725</td><td>750</td>
+            </tr>
+            <tr>
+                <td>1050</td><td>1100</td><td>1150</td><td>1200</td><td>1250</td><td>1300</td><td>1350</td><td>1400</td><td>1450</td><td>1500</td>
+            </tr>
+            <!-- Додаткові ряди можна додати за необхідністю -->
+        </table>
+    </div>
+
+    <div id="team" class="content">
+        <h2>Учасники моєї команди</h2>
+        <ul>
+            <li>Учасник 1</li>
+            <li>Учасник 2</li>
+            <li>Учасник 3</li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <p>Проект команди © 2024</p>
+</footer>
+
+</body>
+</html>
